@@ -24,8 +24,14 @@ mkdir -p $COLORS_DIR
 yellow_text "Install Dependency Manager (Vundle)"
 git clone https://github.com/VundleVim/Vundle.vim.git $BUNDLE_DIR/Vundle.vim
 
+yellow_text "Copy common.vim"
+cp common.vim ~/.vim/common.vim
+
 yellow_text "Copy plugins.vim"
 cp plugins.vim ~/.vim/plugins.vim
+
+yellow_text "Copy language specific configs"
+cp -r ftplugin ~/.vim/ftplugin
 
 yellow_text "Copy .vimrc"
 cp vimrc ~/.vimrc
