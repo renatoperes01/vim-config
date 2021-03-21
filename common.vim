@@ -7,6 +7,9 @@ set nocompatible
 "Line number
 set number
 
+"Relative number
+set relativenumber
+
 "Ruler
 set ruler
 
